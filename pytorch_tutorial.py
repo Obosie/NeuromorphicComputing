@@ -76,3 +76,15 @@ print(x[0,0])
 '''
 
 # Resizing -- use .view
+
+# Converting from Tensor to Numpy 
+a = torch.ones(5, dtype=torch.int)
+print(a)
+b = a.numpy()
+print(type(b))
+
+# Converting from Numpy to Tensor
+a = np.ones(5)
+print(a)
+b = torch.from_numpy(a)
+print(b)
