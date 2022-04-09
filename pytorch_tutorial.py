@@ -2,6 +2,7 @@
 # Make sure the interpreter path points to that of your Virtual Environment
 #   If not; this code will fail to run. 
 
+from turtle import clear
 import torch
 import numpy as np
 
@@ -49,4 +50,29 @@ print(x.dtype)
 x = torch.ones(1,3, dtype=torch.int)
 print(x)
 print(x.dtype)
+
+# Functionality between two tensors 
+x = torch.rand(2,2)
+print(x)
+y = torch.rand(2,2)
+print(y)
+z = x + y
+# adds each element in each tensor then creates z
+print(z)
+
+
+# Splicing 
+print("Pre slice: \n")
+x = torch.rand(5,3)
+print(x)
+print("\n")
+print("Post slice: \n")
+# everything up to col 0
+print(x[:,0])
+# everything up to row 0
+print(x[0,:])
+# specific element
+print(x[0,0])
 '''
+
+# Resizing -- use .view
