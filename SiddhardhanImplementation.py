@@ -19,3 +19,5 @@ from sklearn.metrics import accuracy_score
 breast_cancer_dataset = sklearn.datasets.load_breast_cancer()
 print(breast_cancer_dataset)
 
+# loading to panda data frame - for convience it will be easier for us to analyze the data 
+data_frame =  pd.DataFrame(breast_cancer_dataset)
